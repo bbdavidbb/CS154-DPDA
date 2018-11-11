@@ -1,0 +1,1 @@
+So far only recreated the DFA from the example
