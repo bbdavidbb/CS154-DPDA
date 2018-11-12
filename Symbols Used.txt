@@ -1,0 +1,27 @@
+Symbols used in the DFA TM
+
+X represents aldready Read state
+C represents the Current State Marker
+Y represents the currently consumed input being run
+
+subrule symbols
+o (qi, n) = qj
+
+D represents o the start of a subrule
+N represents a incorrect transition function. Replaces D
+x represents a marked qi
+y represents a marked n
+z represents a marked qj
+
+F represents the final states of accepted States
+---------------------------------------------------------------------------------------------------
+Using the DFA TM as a base for the DPDA TM
+
+These will be the added symbols for the Project (can change)
+subrule(qi, n, r) = (qj, s)
+
+r will be a marked pop
+s will be a marked push 
+m by default is lambda a empty push and pop 
+
+Z will be the mark the start of the stack
