@@ -1,3 +1,0 @@
-since the state is between stack and C, sometimes there wont be enough room
-
-q6 --> q12 (Z; blank, L) and on makes the space between Z and C one blank larger
