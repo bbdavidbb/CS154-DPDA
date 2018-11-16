@@ -25,3 +25,5 @@ s will be a marked push
 m by default is lambda a empty push and pop 
 
 Z will be the mark the start of the stack
+
+t is a temp variable marking stack and stop operations
