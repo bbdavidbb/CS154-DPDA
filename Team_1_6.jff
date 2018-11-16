@@ -28,6 +28,16 @@
 			<x>526.0</x>&#13;
 			<y>313.0</y>&#13;
 		</block>&#13;
+		<block id="3" name="fnd_input">&#13;
+			<tag>fnd_input.jff</tag>&#13;
+			<x>485.0</x>&#13;
+			<y>321.0</y>&#13;
+		</block>&#13;
+		<block id="4" name="fnd_pop">&#13;
+			<tag>fnd_pop.jff</tag>&#13;
+			<x>607.0</x>&#13;
+			<y>320.0</y>&#13;
+		</block>&#13;
 		<block id="5" name="reject">&#13;
 			<tag>reject.jff</tag>&#13;
 			<x>912.0</x>&#13;
@@ -144,8 +154,8 @@
 			<transition>&#13;
 				<from>3</from>&#13;
 				<to>3</to>&#13;
-				<read>!D</read>&#13;
-				<write>~</write>&#13;
+				<read>m</read>&#13;
+				<write>m</write>&#13;
 				<move>L</move>&#13;
 			</transition>&#13;
 			<transition>&#13;
@@ -228,8 +238,8 @@
 			<transition>&#13;
 				<from>1</from>&#13;
 				<to>1</to>&#13;
-				<read>1</read>&#13;
-				<write>1</write>&#13;
+				<read>m</read>&#13;
+				<write>m</write>&#13;
 				<move>R</move>&#13;
 			</transition>&#13;
 			<transition>&#13;
