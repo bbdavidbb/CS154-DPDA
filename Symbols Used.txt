@@ -1,6 +1,6 @@
 Symbols used in the DFA TM
 
-X represents aldready Read state
+X represents already Read state
 C represents the Current State Marker
 Y represents the currently consumed input being run
 
@@ -11,7 +11,8 @@ D represents o the start of a subrule
 N represents a incorrect transition function. Replaces D
 x represents a marked qi
 y represents a marked n
-z represents a marked qj
+z represents a marked current during chk_state
+Z represents a marked Final state during chk_state
 
 F represents the final states of accepted States
 ---------------------------------------------------------------------------------------------------
@@ -23,7 +24,5 @@ subrule(qi, n, r) = (qj, s)
 r will be a marked pop
 s will be a marked push 
 m by default is lambda a empty push and pop 
-
-Z will be the mark the start of the stack
-
-t is a temp variable marking stack and stop operations
+T will be the mark the start of the stack (Switched from Z because chk_final makes use of Z)
+t is a temp variable marking stack and stop operations (Should be cleaned up during pop and push operations)
