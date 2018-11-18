@@ -1,7 +1,8 @@
 Changed the stack to the back of the input string because saving current state and 
-doing stack operations in the same error lead to a lot of bugs.
+doing stack operations in the same area lead to a lot of bugs.
 
-Added a bunch of other blocks to handle edge cases and so forth.
+Added a bunch of other blocks to handle like clean_up to handle edge cases and 
+fit with the flowchart.
 
 Everything up to chk_final is finished and tested for a couple strings.
 ---------------------------------------------------------------------------------------------------
@@ -9,11 +10,11 @@ Setup: (Complete)
 In DFA TM begins by appending 1C right before the input tape.
 The 1 represents q0 the intial vertice and C means it's right before current input.
 
-Z will be the symbol for the start of the stack
-left of Z we be stack going up.
+T will be the symbol for the start of the stack
+right of T will be the stack
 
-For DPDA TM Appends 1Z1C before the input tape.
-1Z is the stack with only Z in it.
+For DPDA TM Appends 1C before the input tape.
+and appemds T1 to the end of the stack.
 ----------------------------------------------------------------------------------------------------
 fnd_state:(Complete)
 
@@ -23,27 +24,24 @@ Adjusted for new symbols
 ------------------------------------------------------------------------------------------------------
 fnd_input:(Complete)
 
-In the DFA block this went through and marked the n to y.
-This works for now. Might have problems a few iterations in though
+In the DFA block this went through and marked the input char to y.
 ------------------------------------------------------------------------------------------------------
 fnd_pop:(Complete):
 
-Have to mark as read with r then go and check the stack. 
-Ends at C
+Have to mark as read with r then go and check the stack.
+If matches pop off the stack. 
 -------------------------------------------------------------------------------------------------------
 clean_up:(Complete)
 
-Cleans up any lingering transitions
+Changes any D transitions to N if they don't meet transition conditions
 -------------------------------------------------------------------------------------------------------
-fnd_write:(Complete):
+wrt_state:(Complete):
 
-In the DFA block this went through and marked the qj to z
-
+In the DFA block this went through and changed current state to transitioned state
 -------------------------------------------------------------------------------------------------------
 wrt_push:(Complete):
 
 Go through and mark all read push symbols as s then push onto stack.
-Ends at C
 -------------------------------------------------------------------------------------------------------
 reset:(Complete):
 
