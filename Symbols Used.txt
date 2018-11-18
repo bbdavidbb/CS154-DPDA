@@ -11,8 +11,8 @@ D represents o the start of a subrule
 N represents a incorrect transition function. Replaces D
 x represents a marked qi
 y represents a marked n
-z represents a marked current during chk_state
-Z represents a marked Final state during chk_state
+z represents a marked current during chk_final
+Z represents a marked Final state during chk_final
 
 F represents the final states of accepted States
 ---------------------------------------------------------------------------------------------------

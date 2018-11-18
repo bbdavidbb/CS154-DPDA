@@ -1,10 +1,10 @@
+Pretty much done.
+
 Changed the stack to the back of the input string because saving current state and 
 doing stack operations in the same area lead to a lot of bugs.
 
 Added a bunch of other blocks to handle like clean_up to handle edge cases and 
 fit with the flowchart.
-
-Everything up to chk_final is finished and tested for a couple strings.
 ---------------------------------------------------------------------------------------------------
 Setup: (Complete)
 In DFA TM begins by appending 1C right before the input tape.
@@ -53,6 +53,9 @@ From the DPDA flowchart.
 chk_csm:(Complete)
 From the DPDA flowchart.
 -------------------------------------------------------------------------------------------------------
-chk_final:(Incomplete):
+chk_final:(Complete):
 Check if current state is a final state. 
 --------------------------------------------------------------------------------------------------------
+reject:(Complete)
+--------------------------------------------------------------------------------------------------------
+accept:(Complete)
